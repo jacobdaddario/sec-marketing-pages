@@ -4,5 +4,12 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-plugin-postcss",
+      options: {
+        postCssPlugins: [require("tailwindcss")("./tailwind.config.js")],
+      },
+    },
+  ],
 };
