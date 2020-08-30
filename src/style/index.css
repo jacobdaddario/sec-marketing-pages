@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.splash-slideshow {
+  animation: slideshow 15s linear infinite;
+}
+
+@keyframes slideshow {
+  100% {
+    transform: translateY(-63.475177305%);
+  }
+}
