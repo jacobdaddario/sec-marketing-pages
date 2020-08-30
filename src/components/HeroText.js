@@ -6,7 +6,7 @@ const HeroText = () => {
     <div className="w-1/2">
       <h1 className="mb-2 text-5xl text-gray-900 font-light tracking-tight leading-tight">
         Welcome to the <br />
-        <span className="px-3 text-maroon-700 bg-yellow-300 bg-opacity-75 rounded font-semibold transition-colors ease-in-out duration-500 hover:bg-yellow-400">
+        <span className="text-maroon-700 font-semibold">
           Student Engineers' Council
         </span>
       </h1>
@@ -16,7 +16,10 @@ const HeroText = () => {
       </p>
       <div className="mt-16">
         <h2 className="text-5xl text-gray-800 font-semibold tracking-tight leading-tight">
-          Come take part in the largest student-run career fair in the country!
+          <span className="bg-yellow-300 bg-opacity-75 rounded-md transition-colors ease-in-out duration-500 hover:bg-yellow-400">
+            Come take part in the largest student-run career fair in the
+            country!
+          </span>
         </h2>
         <div className="mt-8">
           <Button
