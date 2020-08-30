@@ -1,7 +1,30 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
+.button {
+  @apply inline-block px-4 py-2 border-2 rounded-md cursor-pointer;
+}
+
+.button-link {
+  @apply text-lg no-underline font-semibold tracking-tight;
+}
+
+.button-primary {
+  @apply bg-maroon-600 border-maroon-700;
+}
+
+.button-secondary {
+  @apply bg-gray-200 border-gray-300;
+}
+
+.button-shadow {
+  @apply transition-shadow ease-in-out duration-500 shadow-md;
+}
+
+.button-shadow:hover {
+  @apply shadow-lg;
+}
+
+/* Slideshow styling */
 .splash-slideshow {
   animation: slideshow 15s linear infinite;
 }
@@ -11,3 +34,6 @@
     transform: translateY(-63.475177305%);
   }
 }
+
+@tailwind components;
+@tailwind utilities;

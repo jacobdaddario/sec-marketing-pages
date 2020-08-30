@@ -5,8 +5,8 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-postcss",
       options: {
@@ -16,8 +16,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`
+        name: "images",
+        path: `${__dirname}/src/images`,
       },
     },
   ],
