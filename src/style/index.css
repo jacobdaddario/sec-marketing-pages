@@ -1,27 +1,35 @@
 @tailwind base;
 
 .button {
-  @apply inline-block px-4 py-2 border-2 rounded-md cursor-pointer;
+  @apply inline-block px-5 py-3 border-2 rounded-md cursor-pointer;
 }
 
 .button-link {
-  @apply text-lg no-underline font-semibold tracking-tight;
+  @apply text-xl no-underline tracking-wide;
 }
 
 .button-primary {
-  @apply bg-maroon-600 border-maroon-700;
+  @apply bg-maroon-600 border-maroon-700 text-white transition-colors ease-out duration-150;
+}
+
+.button-primary:hover {
+  @apply bg-maroon-500 border-maroon-600;
 }
 
 .button-secondary {
-  @apply bg-gray-200 border-gray-300;
+  @apply bg-white border-gray-300 text-gray-700 transition-colors ease-out duration-150;
+}
+
+.button-secondary:hover {
+  @apply text-gray-600;
 }
 
 .button-shadow {
-  @apply transition-shadow ease-in-out duration-500 shadow-md;
+  @apply transition-shadow ease-in-out duration-500 shadow;
 }
 
 .button-shadow:hover {
-  @apply shadow-lg;
+  @apply shadow-md;
 }
 
 /* Slideshow styling */

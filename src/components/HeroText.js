@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../components/Button";
+import cap from "../images/icons/grad_cap.svg";
+import office from "../images/icons/office_building.svg";
 
 const HeroText = () => {
   return (
@@ -25,14 +27,14 @@ const HeroText = () => {
           <Button
             link="https://careerfair.sec.tamu.edu/companies/recruiters/sign_in"
             buttonClasses="button button-primary mr-8"
-            linkClasses="button-link text-white text-2xl"
+            linkClasses="button-link"
           >
             Companies
           </Button>
           <Button
             link="https://careerfair.sec.tamu.edu/career-fair/students/fair-information/general-information"
-            buttonClasses="button button-secondary"
-            linkClasses="button-link text-gray-700 text-2xl"
+            buttonClasses="button button-secondary button"
+            linkClasses="button-link"
           >
             Students
           </Button>
